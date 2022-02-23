@@ -1,11 +1,11 @@
 Summary:	Kubectl (Kubernetes client tools)
 Name:		kubectl
-Version:	1.13.3
+Version:	1.23.4
 Release:	1
 License:	Apache v2.0
 Group:		Applications
 Source0:	https://storage.googleapis.com/kubernetes-release/release/v%{version}/bin/linux/amd64/%{name}
-# Source0-md5:	205b5446cd5296827e3ac972678c74bd
+# Source0-md5:	da75d443396d667edfc66f34662ea153
 URL:		http://kubernetes.io/
 ExclusiveArch:	%{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
