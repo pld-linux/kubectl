@@ -1,7 +1,6 @@
 %define		major	1
 %define		minor	23
 %define		patch	4
-%define		vendor_version	1.23.4
 
 Summary:	Kubectl (Kubernetes client tools)
 Name:		kubectl
