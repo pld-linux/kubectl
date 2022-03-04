@@ -61,12 +61,14 @@ ZSH completion for kubectl command line.
 %setup -qc
 
 %build
-ldflags="-X k8s.io/component-base/version.gitMajor=%{major} \
+ldflags="\
+	-X k8s.io/component-base/version.gitMajor=%{major} \
 	-X k8s.io/component-base/version.gitMinor=%{minor} \
 	-X k8s.io/component-base/version.buildDate=$(date +'%Y-%m-%dT%H:%M:%SZ') \
 	-X k8s.io/component-base/version.gitCommit= \
 	-X k8s.io/component-base/version.gitVersion=v%{version} \
-	-X k8s.io/client-go/pkg/version.gitVersion=v%{version}"
+	-X k8s.io/client-go/pkg/version.gitVersion=v%{version} \
+"
 %__go build -v -ldflags="$ldflags" -o target/kubectl k8s.io/kubernetes/cmd/kubectl
 
 %install
