@@ -1,6 +1,6 @@
 %define		major	1
 %define		minor	23
-%define		patch	8
+%define		patch	13
 
 Summary:	Kubectl (Kubernetes client tools)
 Name:		kubectl
@@ -8,9 +8,9 @@ Version:	%{major}.%{minor}.%{patch}
 Release:	1
 License:	Apache v2.0
 Group:		Applications
-Source0:	https://dl.k8s.io/v%{version}/kubernetes-src.tar.gz
-# Source0-md5:	e0db00d1890901636877391ac5e4e033
-URL:		http://kubernetes.io/
+Source0:	https://dl.k8s.io/v%{version}/kubernetes-src.tar.gz?/kubernetes-src-%{version}.tar.gz
+# Source0-md5:	93632372a9d9cb21d56819b647bfd850
+URL:		https://kubernetes.io/docs/tasks/tools/#kubectl
 BuildRequires:	golang >= 1.16
 BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 2.009
